@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="jp">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>ご質問</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <!--header -->
+  <header id="header" class="header">
+    <div id="header_left" class="header-left">
+      <div class="logo">
+        <a href="index.html"><img src="images/logo.jpg" alt="" height="95px"></a>
+      </div>
+      <ul>
+        <li>
+          <a href="home.html" class="jp1"><span>トップ</span></a>
+        </li>
+        <li>
+          <a href="my hobby.html" class="jp2">私の趣味</a>
+        </li>
+        <li>
+          <a href="my study.html" class="jp3">私の勉強</a>
+          <span class="new">new</span>
+        </li>
+        <li>
+          <a href="#" class="jp4">ご質問</a>
+        </li>
+      </ul>
+    </div>
+    <div class="header-center">
+      <input id="query" name="query" type="text" placeholder="お気に入りを検索" value="" size="40">
+    </div>
+    <div class="header-right" id="hesder_right">
+      <a href="javascript:;" class="register" id="register">
+        <span class="text">　登 録　</span>
+      </a>
+      <a href="javascript:;" class="login" id="login">
+        <span class="text" id="text">ログイン</span>
+      </a>
+    </div>
+  </header>
+  <!-- banner slider -->
+  <section id="slider_banner" class="slider-banner">
+    <ul>
+      <li><a href="javascript:;"></a></li>
+      <li><a href="javascript:;"></a></li>
+      <li><a href="javascript:;"></a></li>
+      <li><a href="javascript:;"></a></li>
+    </ul>
+  </section>
+  <!-- c-main -->
+  <div id="c-main">
+    <h1 id="h1">アンケートフォーム</h1>
+    <form id="form1" name="form1" method="post" action="">
+      <table>
+        <tr>
+          <td><label for="namae">お名前</label></td>
+          <td><input type="text" name="namae" id="namae" style="padding:5px 10px;" /><br />
+            <span id="namae_error" name="namae_error"></span>
+          </td>
+        </tr>
+        <tr>
+          <td><label for="jyusyo">住所</label></td>
+          <td>
+            <select name="jyusyo" id="jyusyo" style="padding:5px 10px;">
+              <option value="選択してください">選択してください</option>
+              <option value="愛知県">愛知県</option>
+              <option value="岐阜県">岐阜県</option>
+              <option value="静岡県">静岡県</option>
+              <option value="三重県">三重県</option>
+              <option value="長野県">長野県</option>
+              <option value="滋賀県">滋賀県</option>
+              <option value="京都府">京都府</option>
+              <option value="北海道">北海道</option>
+              <option value="青森県">青森県</option>
+              <option value="岩手県">岩手県</option>
+              <option value="宮城県">宮城県</option>
+              <option value="秋田県">秋田県</option>
+              <option value="山形県">山形県</option>
+              <option value="福島県">福島県</option>
+              <option value="茨城県">茨城県</option>
+              <option value="栃木県">栃木県</option>
+              <option value="群馬県">群馬県</option>
+              <option value="埼玉県">埼玉県</option>
+              <option value="千葉県">千葉県</option>
+              <option value="東京都">東京都</option>
+              <option value="神奈川県">神奈川県</option>
+              <option value="新潟県">新潟県</option>
+              <option value="富山県">富山県</option>
+              <option value="石川県">石川県</option>
+              <option value="福井県">福井県</option>
+              <option value="山梨県">山梨県</option>
+              <option value="大阪府">大阪府</option>
+              <option value="兵庫県">兵庫県</option>
+              <option value="奈良県">奈良県</option>
+              <option value="和歌山県">和歌山県</option>
+              <option value="鳥取県">鳥取県</option>
+              <option value="島根県">島根県</option>
+              <option value="岡山県">岡山県</option>
+              <option value="広島県">広島県</option>
+              <option value="山口県">山口県</option>
+              <option value="徳島県">徳島県</option>
+              <option value="香川県">香川県</option>
+              <option value="愛媛県">愛媛県</option>
+              <option value="高知県">高知県</option>
+              <option value="福岡県">福岡県</option>
+              <option value="佐賀県">佐賀県</option>
+              <option value="長崎県">長崎県</option>
+              <option value="熊本県">熊本県</option>
+              <option value="大分県">大分県</option>
+              <option value="宮崎県">宮崎県</option>
+              <option value="鹿児島県">鹿児島県</option>
+              <option value="沖縄県">沖縄県</option>
+            </select>
+            <br /><span id="jyusyo_error" name="jyusyo_error"></span>
+          </td>
+        </tr>
+        <tr>
+          <td><label for="q1">アンケート1</label></td>
+          <td>
+            <p>このサイトをご覧になった感想？</p>
+            <p>
+              <input type="radio" name="q1" value="よかった" onClick="changeDisabled()" />よかった　　
+              <input type="radio" name="q1" value="普通" onClick="changeDisabled()" />普通　　
+              <input type="radio" name="q1" value="おもしろくなかった" onClick="changeDisabled()" />おもしろくなかった
+              <br /><span id="q1_error" name="q1_error"></span>
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td><label for="q2">アンケート2</label></td>
+          <td>
+            <p>アンケート1で「おもしろくなかった」とお答えの方に質問です。<br />おもしろくなかった理由は何ですか？</p>
+            <p>
+              <input type="checkbox" name="q2" value="内容が雑だった" disabled="disabled" />内容が雑だった　　
+              <input type="checkbox" name="q2" value="デザインがダサかった" disabled="disabled" />デザインがダサかった　　
+              <input type="checkbox" name="q2" value="動きがおかしかった" disabled="disabled" />動きがおかしかった　
+              <br /><span id="q2_error" name="q2_error"></span>
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td><label for="etc">ご質問</label></td>
+          <td>
+            <p>何でも結構ですので、ご記入ください。</p>
+            <p><textarea name="etc" id="etc" rows="20"></textarea>
+              <br /><span id="etc_error" name="etc_error"></span>
+            </p>
+          </td>
+        </tr>
+      </table>
+      <p text-align="center"><input name="soushin" id="soushin" type="button" value="送信" onclick="check()" /></p>
+    </form>
+  </div>
+  <!-- sidebanner -->
+  <div id="aside">
+    <a href=""><img src="images/side.jpg" width='120px' alt=""></a>
+  </div>
+  <!-- fixed menu -->
+  <section id="top_nav" class="top-nav">
+    <div class="top-nav-in">
+      <div class="left">
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="home.html">自己紹介</a></li>
+          <li><a href="my hobby.html">私の趣味</a></li>
+          <li><a href="my study.html">私の勉強</a></li>
+          <li><a href="#">ご質問</a></li>
+        </ul>
+      </div>
+      <div class="right">
+        <ul>
+          <li><a href="javascript:;"><img src="images/sns/1.jpg" alt=""></a></li>
+          <li><a href="javascript:;"><img src="images/sns/2.jpg" alt=""></a></li>
+          <li><a href="javascript:;"><img src="images/sns/3.jpg" alt=""></a></li>
+          <li><a href="javascript:;"><img src="images/sns/4.jpg" alt=""></a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <!--  to top -->
+  <div id="elevator_item" class="elevator-item">
+    <a href="#" id="elevator" class="elevator" title="top"></a><br>
+  </div>
+  <!-- footer-->
+  <footer>
+    <div class="footer-in">©U SHI COMPANY &nbsp;&nbsp;
+      <span class="divider">|</span>
+      &nbsp;&nbsp;<a target="_blank" href="index.html">My Page</a>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+  <script src="js/Chart.bundle.js"></script>
+  <script src="js/myfuncition.js"></script>
+  <script src="js/my.js"></script>
+  <script src="js/contact.js"></script>
+
+</body>
+
+</html>

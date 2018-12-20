@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="jp">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>私の勉強</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.bundle.js"></script>
+</head>
+
+<body>
+  <!--header -->
+  <header id="header" class="header">
+    <div id="header_left" class="header-left">
+      <div class="logo">
+        <a href="index.html"><img src="images/logo.jpg" alt="" height="95px"></a>
+      </div>
+      <ul>
+        <li>
+          <a href="home.html" class="jp1"><span>トップ</span></a>
+        </li>
+        <li>
+          <a href="my hobby.html" class="jp2">私の趣味</a>
+        </li>
+        <li>
+          <a href="#" class="jp3">私の勉強</a>
+          <span class="new">new</span>
+        </li>
+        <li>
+          <a href="contact.html" class="jp4">ご質問</a>
+        </li>
+      </ul>
+    </div>
+    <div class="header-center">
+      <input id="query" name="query" type="text" placeholder="お気に入りを検索" value="" size="40">
+    </div>
+    <div class="header-right" id="hesder_right">
+      <a href="javascript:;" class="register" id="register">
+        <span class="text">　登 録　</span>
+      </a>
+      <a href="javascript:;" class="login" id="login">
+        <span class="text" id="text">ログイン</span>
+      </a>
+    </div>
+  </header>
+  <!-- banner slider -->
+  <section id="slider_banner" class="slider-banner">
+    <ul>
+      <li><a href="javascript:;"></a></li>
+      <li><a href="javascript:;"></a></li>
+      <li><a href="javascript:;"></a></li>
+      <li><a href="javascript:;"></a></li>
+    </ul>
+  </section>
+  <!--******************************************************* -->
+  <!-- h-main -->
+  <section class="s-main" id="s_min">
+    <div class="fun-img">
+      <img src="images/study/1.jpg" width="500px" alt="">
+    </div>
+    <div class="chart-container">
+      <canvas id="myChart"></canvas>
+    </div>
+  </section>
+  <section class="s-main-text">
+    <table class="s-book">
+      <caption>
+        <h2>私の勉強用教科書</h2>
+      </caption>
+      <tr>
+        <th>名前</th>
+        <td>著者</td>
+        <td>カテゴリー</td>
+        <td>Amazon</td>
+      </tr>
+      <tr>
+        <th>「スラスラわかるHTML＆CSSのきほん」</th>
+        <td>狩野 祐東</td>
+        <td>HTML+CSS</td>
+        <td>https://www.amazon.co.jp/dp/4797372966</td>
+      </tr>
+      <tr>
+        <th>「確かな力が身につくJavaScript超入門」</th>
+        <td>狩野 祐東</td>
+        <td>JavaScript</td>
+        <td>https://www.amazon.co.jp/dp/4797383585</td>
+      </tr>
+      <tr>
+        <th>「jQuery最高の教科書」</th>
+        <td>株式会社シフトブレイン</td>
+        <td>jQuery</td>
+        <td>https://www.amazon.co.jp/dp/4797372214</td>
+      </tr>
+      <tr>
+        <th>「Webデザインの為のPhotoshop+Illustrator テクニック」</th>
+        <td>瀧上 園枝</td>
+        <td>UIデザイン</td>
+        <td>https://www.amazon.co.jp/dp/4767822513</td>
+      </tr>
+      <tr>
+        <th>「いちばんやさしいWordPressの教本」</th>
+        <td>石川栄和,大串肇,星野邦敏</td>
+        <td>Word Press</td>
+        <td>https://www.amazon.co.jp/dp/4295000795</td>
+      </tr>
+      <tr>
+        <th>「ゼロからわかるPHP超入門」</th>
+        <td>星野 香保子 </td>
+        <td>PHP</td>
+        <td>https://www.amazon.co.jp/dp/4774178918</td>
+      </tr>
+    </table>
+    <table class="s-web">
+      <caption>
+        <h2>私の勉強用ウェブサイト</h2>
+      </caption>
+      <tr>
+        <th>サイト名</th>
+        <td>カテゴリー</td>
+        <td>URL</td>
+      </tr>
+      <tr>
+        <th>ドットインストール</th>
+        <td>オンライン動画勉強サイト</td>
+        <td>https://dotinstall.com/</td>
+      </tr>
+      <tr>
+        <th>CODEPREP</th>
+        <td>オンライン学習サービス</td>
+        <td>https://codeprep.jp/</td>
+      </tr>
+      <tr>
+        <th>腾讯云课堂</th>
+        <td>オンライン動画勉強サイト</td>
+        <td>https://study.163.com/category/400000001316004</td>
+      </tr>
+    </table>
+  </section>
+  <!-- sidebanner -->
+  <div id="aside">
+    <a href=""><img src="images/side.jpg" width="120px" alt=""></a>
+  </div>
+  <!-- fixed menu -->
+  <section id="top_nav" class="top-nav">
+    <div class="top-nav-in">
+      <div class="left">
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="home.html">自己紹介</a></li>
+          <li><a href="my hobby.html">私の趣味</a></li>
+          <li><a href="#">私の勉強</a></li>
+          <li><a href="contact.html">ご質問</a></li>
+        </ul>
+      </div>
+      <div class="right">
+        <ul>
+          <li><a href="javascript:;"><img src="images/sns/1.jpg" alt=""></a></li>
+          <li><a href="javascript:;"><img src="images/sns/2.jpg" alt=""></a></li>
+          <li><a href="javascript:;"><img src="images/sns/3.jpg" alt=""></a></li>
+          <li><a href="javascript:;"><img src="images/sns/4.jpg" alt=""></a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <!--  to top -->
+  <div id="elevator_item" class="elevator-item">
+    <a href="#" id="elevator" class="elevator" title="top"></a><br>
+  </div>
+  <!-- footer-->
+  <footer>
+    <div class="footer-in">©U SHI COMPANY &nbsp;&nbsp;
+      <span class="divider">|</span>
+      &nbsp;&nbsp;<a target="_blank" href="index.html">My Page</a>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+  <script src="js/Chart.bundle.js"></script>
+  <script src="js/myfuncition.js"></script>
+  <script src="js/my.js"></script>
+  <script src="js/my study.js"></script>
+
+</body>
+
+</html>
